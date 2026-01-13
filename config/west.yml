@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 2ee76be6fee671042d9740ac0271eb69e2558165 # Pinning commit May 13, 2024
       import: app/west.yml
   self:
     path: config
