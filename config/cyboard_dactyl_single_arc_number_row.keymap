@@ -32,21 +32,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERTY {
+        QWERTY { // mo 0
             bindings = <
 &kp CAPS       &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                   &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp LC(BSPC)
 &none          &kp Q   &kp W     &kp E     &kp R     &kp T                    &kp Y    &kp U     &kp I      &kp O    &kp P     &kp LBKT
 &kp TAB        &kp A   &kp S     &kp D     &kp F     &kp G                    &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &mt LSHFT ESC  &kp Z   &kp X     &kp C     &kp V     &kp B                    &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL      &none   &kp NUBS  &kp LGUI                                                        &none      &none    &none     &none
+&kp LCTRL      &none   &kp NUBS  &kp LGUI                                                        &kp GRAVE  &none    &none     &none
                                            &kp LALT  &kp SPACE  &mo 1  &mo 2  &kp RET  &kp RALT
             >;
         };
 
-        LOWER {
+        LOWER { // mo 1
             bindings = <
 &trans       &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                  &kp F6   &kp F7     &kp F8    &kp F9     &kp F10  &kp MINUS
-&trans       &kp F11  &trans  &kp F12  &trans  &trans                  &trans   &kp KP_N7  &kp UP    &kp KP_N9  &trans   &kp RBKT
+&trans       &trans   &kp F11 &trans   &kp F12 &trans                  &trans   &kp KP_N7  &kp UP    &kp KP_N9  &trans   &kp RBKT
 &trans       &trans   &trans  &trans   &trans  &trans                  &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans   &kp NUHS
 &trans       &trans   &trans  &trans   &trans  &trans                  &trans   &kp KP_N1  &trans    &kp KP_N3  &trans   &kp MINUS
 &trans       &trans   &trans  &trans                                                       &trans    &trans     &trans   &trans
@@ -54,18 +54,18 @@
             >;
         };
 
-        RAISE {
+        RAISE { // mo 2
             bindings = <
 &trans  &kp F1    &kp F2    &kp F3     &kp F4  &kp F5                            &kp F6        &kp F7        &kp F8      &kp F9    &kp F10    &kp MINUS
-&trans  &kp F11   &kp UP    &kp F12    &trans  &trans                            &trans        &trans        &trans      &trans    &kp PSCRN  &kp RBKT
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                            &trans        &trans        &trans      &kp HOME  &kp PG_UP  &kp NUHS
+&trans  &trans    &kp F11   &kp UP    &kp F12  &trans                            &trans        &trans        &trans      &trans    &kp PSCRN  &kp RBKT
+&trans  &trans    &kp LEFT  &kp DOWN  &kp RIGHT &trans                           &trans        &trans        &trans      &kp HOME  &kp PG_UP  &kp NUHS
 &trans  &trans    &trans    &trans     &trans  &ext_power EP_ON                  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp END   &kp PG_DN  &kp RS(MINUS)
 &trans  &trans    &trans    &trans                                                                           &trans      &trans    &trans     &bootloader
                                        &trans  &kp BSPC          &trans  &trans  &trans        &trans
             >;
         };
 
-        ADJUST {
+        ADJUST { // mo 3
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                     &none  &none  &none  &none  &none  &none
 &none       &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                  &none  &none  &none  &none  &none  &none
