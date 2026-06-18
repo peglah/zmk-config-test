@@ -38,7 +38,7 @@
 &none          &kp Q   &kp W     &kp E     &kp R     &kp T                    &kp Y    &kp U     &kp I      &kp O    &kp P     &kp LBKT
 &kp TAB        &kp A   &kp S     &kp D     &kp F     &kp G                    &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &mt LSHFT ESC  &kp Z   &kp X     &kp C     &kp V     &kp B                    &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL      &none   &kp NUBS  &kp LGUI                                                        &kp GRAVE  &none    &none     &none
+&kp LCTRL      &none   &kp NUBS  &kp LGUI                                                        &kp EQUAL  &none    &none     &none
                                            &kp LALT  &kp SPACE  &mo 1  &mo 2  &kp RET  &kp RALT
             >;
         };
